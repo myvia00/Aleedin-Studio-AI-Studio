@@ -1,31 +1,50 @@
-![Logo Aleedin Studio](aleedin-studio-logo.png)
+# Aleedin Studio
 
-# Aleedin Studio 0.3.41
+AI workspace untuk berbual dengan **ChatGPT, Claude, Gemini** dan **AI tempatan (Ollama / LM Studio)**, dengan **alat MCP** tersuai — sebagai **aplikasi desktop Windows** dan **plugin VS Code**.
 
-Aleedin Studio menyediakan ruang chat AI melalui aplikasi desktop Windows dan sambungan VS Code. Ia menyokong ChatGPT, Claude, Gemini, model tempatan melalui Ollama atau LM Studio, dan pelayan MCP tersuai.
+📖 Dokumentasi penuh: [Source/README.md](Source/README.md) · 🛠️ Rujukan pembangunan: [Source/docs/development.md](Source/docs/development.md)
 
-**[Muat turun Aleedin Studio 0.3.41 (ZIP)](https://drive.google.com/file/d/1AQHc3xf9O6RpkXnx20ygrvRJ-w9aq3U6/view?usp=drive_link)**
+## Ciri utama
 
-## Baharu dalam versi 0.3.41
+- Chat dengan API OpenAI, Anthropic, Google dan servis OpenAI-compatible, atau model tempatan tanpa API key.
+- Sesi CLI rasmi (Claude Code, Codex, Gemini CLI) untuk akaun langganan.
+- **Multi-AI**: satu prompt kepada beberapa AI serentak.
+- **Alat MCP** (stdio / HTTP) dengan kelulusan setiap panggilan, termasuk alat terbina dalam:
+  - **PHP & Apache** — semak sintaks PHP, cari komponen Composer, status Apache.
+  - **Office** — kawal Excel, Word dan PowerPoint (aplikasi desktop sahaja).
+  - **PowerShell & Command** — jalankan arahan dalam PC, sentiasa dengan kelulusan (aplikasi desktop sahaja).
+  - **REA** — reverse engineering binari dan aplikasi ([morluto/rea](https://github.com/morluto/rea)).
+  - **Figma** — baca fail, eksport frame sebagai gambar, komen.
+  - **Lukisan Teknikal (ISO/IEC)** — lukisan part mekanikal (ISO 128/129, blok tajuk ISO 7200) dan skematik elektrik (simbol IEC 60617).
+  - **PLC Ladder Logic** — lukis rajah ladder IEC 61131-3 dan jana Structured Text.
+  - JavaScript, Blockchain (Ethereum) dan Ekonomi Malaysia.
+- **Contoh MCP kejuruteraan** — KiCad, FreeCAD, draw.io, SPICE (ngspice) dan PCB Parts ([butiran](Source/README.md#elektronik-eda-lukisan-teknikal--plc)).
+- **Contoh MCP marketing & SEO** — Apify, Firecrawl, Brave Search, Google Analytics (GA4), Google Search Console dan DataForSEO ([butiran](Source/README.md#marketing-seo--research)).
+- Gambar daripada alat MCP dipaparkan terus dalam chat.
 
-Alat **Lukisan Teknikal (ISO/IEC)** kini menyokong:
+## Keluaran Desktop Windows 0.3.60
 
-- Kerangka toleransi geometri (GD&T) dan simbol datum.
-- Simbol kemasan permukaan dan kimpalan.
-- Pandangan isometrik untuk blok, silinder dan lubang.
-- Eksport DXF AutoCAD R12 untuk AutoCAD, LibreCAD atau FreeCAD.
+Keluaran ini menambah pilihan MCP untuk kerja kejuruteraan:
 
-## Jalankan aplikasi desktop Windows
+- **CNC G-code & GNU C++** menyemak sintaks G-code secara luar talian dan menyokong kompilasi C++ melalui WSL.
+- **Lukisan Teknikal (ISO/IEC)** kini boleh membaca skematik, carta alir dan pelan lantai serta mencari nombor komponen dalam katalog PDF. Ia juga boleh menjana rajah konsep turbin, grid kuasa dan pemprosesan petroleum.
 
-1. Ekstrak keseluruhan ZIP ke satu folder.
-2. Buka folder `Windows_Desktop_Release` dan jalankan **Aleedin Studio.exe**. Simpan semua fail sokongan dalam folder yang sama.
-3. Pilih servis AI, lengkapkan tetapan akses dan pilih model sebelum memulakan chat.
+Preset ini tersedia di **Tetapan → Server MCP → Contoh MCP percuma**.
 
-## Pasang sambungan VS Code
+## Mula
 
-1. Gunakan VS Code **1.106.0 atau lebih baharu**.
-2. Tekan **Ctrl+Shift+P** dan pilih **Extensions: Install from VSIX?**.
-3. Pilih `VSCode_Plugin/aleedin-studio-0.3.41.vsix` daripada folder yang diekstrak.
-4. Buka ruang kerja yang dipercayai dan jalankan **Buka Aleedin Chat** daripada Command Palette.
+| | |
+|---|---|
+| Desktop Windows | Ekstrak `Source/dist/Aleedin_Studio_Windows_<versi>.zip`, kemudian buka **Aleedin Studio.exe** |
+| Plugin VS Code | **Extensions: Install from VSIX...** → `Source/dist/aleedin-studio-<versi>.vsix` |
+| Dari source | `cd Source && npm install && npm run desktop` |
 
-Untuk persediaan lanjut, buka `MULA_DISINI.md` dalam ZIP atau `VSCode_Plugin/VSIX_MANUAL_MS.md` untuk panduan sambungan VS Code dalam Bahasa Melayu.
+## Bina dan uji
+
+```bash
+cd Source
+npm install
+npm test
+npm run build:extension   # plugin VS Code (.vsix)
+npm run build:windows     # aplikasi desktop (.zip)
+```
