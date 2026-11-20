@@ -1,3 +1,5 @@
+<a href="https://drive.google.com/drive/folders/181fAOaEeChByQLBqOxgygOVTtQS-hdfm"> Download link</a>
+<br />
 # Aleedin Studio manual for VS Code
 
 [Manual Bahasa Melayu](VSIX_MANUAL_MS.md)
