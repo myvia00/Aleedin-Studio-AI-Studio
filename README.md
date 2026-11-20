@@ -1,5 +1,6 @@
 # Aleedin Studio
-
+<a href="https://drive.google.com/drive/folders/159IcBshQdEiyb5zb6TKWGcxoSQdXH_67?usp=sharing">Download Link</a>
+<br />
 AI workspace untuk berbual dengan **ChatGPT, Claude, Gemini** dan **AI tempatan (Ollama / LM Studio)**, dengan **alat MCP** tersuai — sebagai **aplikasi desktop Windows** dan **plugin VS Code**.
 
 📖 Dokumentasi penuh: [Source/README.md](Source/README.md) · 🛠️ Rujukan pembangunan: [Source/docs/development.md](Source/docs/development.md)
