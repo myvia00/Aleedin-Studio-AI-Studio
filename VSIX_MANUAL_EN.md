@@ -1,4 +1,5 @@
-<a href="https://drive.google.com/drive/folders/181fAOaEeChByQLBqOxgygOVTtQS-hdfm"> Download link</a>
+# Aleedin Studio
+<a href="https://drive.google.com/drive/folders/159IcBshQdEiyb5zb6TKWGcxoSQdXH_67?usp=drive_link">Download Link</a>
 <br />
 # Aleedin Studio manual for VS Code
 
