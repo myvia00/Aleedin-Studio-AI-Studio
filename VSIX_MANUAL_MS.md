@@ -5,7 +5,7 @@
 ## Pasang dan buka
 
 1. Dalam VS Code, tekan **Ctrl+Shift+P** dan pilih **Extensions: Install from VSIX…**.
-2. Pilih fail `aleedin-studio-0.3.41.vsix` (atau versi terbaharu dalam folder `VSCode_Plugin`). Muat semula VS Code jika diminta.
+2. Pilih fail `aleedin-studio-0.3.42.vsix` (atau versi terbaharu dalam folder `VSCode_Plugin`). Muat semula VS Code jika diminta.
 3. Buka folder projek yang anda percayai, kemudian jalankan **Buka Aleedin Chat** daripada Command Palette. Panel Aleedin muncul di bar sisi sekunder. Backend localhost bermula apabila panel menyambung.
 
 ## Pilih bahasa dan buka manual
@@ -20,6 +20,22 @@
 2. Untuk OpenAI, Anthropic atau Gemini, tambah servis penyedia dan simpan kunci API. Untuk Ollama atau LM Studio, jalankan servis tempatan dan pastikan model sudah dimuat turun.
 3. Pilih servis dan model dalam ruang chat. Gunakan butang muat semula model jika senarai belum muncul.
 4. Untuk akaun langganan, pilih mod **Sign in**, kemudian ikut aliran log masuk CLI penyedia. Ketersediaan model bergantung pada akaun dan servis yang dipilih.
+
+## Guna beberapa akaun
+
+- **API key:**
+  1. Dalam **Servis AI**, klik **Servis baharu**, kemudian **Tambah pantas** (ChatGPT / Claude / Gemini).
+  2. Beri **Nama** yang berbeza, contohnya `ChatGPT Kerja`, dan tampal key kedua.
+  3. Klik **Simpan servis**.
+
+  Setiap servis menyimpan key sendiri dan muncul berasingan dalam pemilih servis serta **⧉ AI**.
+- **Akaun langganan:**
+  1. Klik **Langganan & Agent**.
+  2. Di bawah **Tambah profil**, isi nama seperti `Claude Kerja`, pilih jenis, dan klik **＋ Tambah profil**.
+  3. Klik **Sign in** pada profil baharu tu.
+
+  Setiap profil Claude Code, Codex dan Gemini CLI menyimpan login sendiri, jadi akaun kedua tidak menimpa akaun pertama.
+- **Profil Gemini lama:** profil Gemini yang dicipta sebelum versi 0.3.42 memaparkan *login dikongsi (~/.gemini)*. Untuk akaun Google kedua, tambah profil Gemini baharu.
 
 ## Lampir fail dan buka lokasi
 

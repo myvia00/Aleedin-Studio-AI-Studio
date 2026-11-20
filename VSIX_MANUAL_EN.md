@@ -5,7 +5,7 @@
 ## Install and open
 
 1. In VS Code, press **Ctrl+Shift+P** and choose **Extensions: Install from VSIX…**.
-2. Select `aleedin-studio-0.3.41.vsix` (or the newest version in the `VSCode_Plugin` folder). Reload VS Code if prompted.
+2. Select `aleedin-studio-0.3.42.vsix` (or the newest version in the `VSCode_Plugin` folder). Reload VS Code if prompted.
 3. Open a project folder you trust, then run **Buka Aleedin Chat** from the Command Palette. The Aleedin panel appears in the secondary sidebar. The localhost backend starts when the panel connects.
 
 ## Choose a language and open the manual
@@ -20,6 +20,22 @@
 2. For OpenAI, Anthropic, or Gemini, add the provider and save its API key. For Ollama or LM Studio, start the local service and download a model first.
 3. Select the service and model in chat. Refresh the model list if it has not appeared yet.
 4. For subscription accounts, choose **Sign in** and follow the provider’s CLI sign-in flow. Model availability depends on your account and the selected service.
+
+## Use several accounts
+
+- **API keys:**
+  1. In **AI Services**, select **New service**, then **Quick add** (ChatGPT / Claude / Gemini).
+  2. Give it a different **Name**, for example `ChatGPT Work`, and paste the second key.
+  3. Select **Save service**.
+
+  Each service keeps its own key and appears separately in the service picker and in **⧉ AI**.
+- **Subscription accounts:**
+  1. Open **Subscriptions & Agents**.
+  2. Under **Add profile**, enter a name such as `Claude Work`, choose the type, and select **＋ Add profile**.
+  3. Select **Sign in** on the new profile.
+
+  Each Claude Code, Codex and Gemini CLI profile keeps its own login, so a second account does not replace the first.
+- **Older Gemini profiles:** Gemini profiles created before version 0.3.42 show *login dikongsi (~/.gemini)* (shared login). For a second Google account, add a new Gemini profile.
 
 ## Attach files and open locations
 
