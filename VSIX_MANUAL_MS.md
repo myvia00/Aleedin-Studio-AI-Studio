@@ -1,3 +1,6 @@
+# Aleedin Studio
+<a href="https://drive.google.com/drive/folders/159IcBshQdEiyb5zb6TKWGcxoSQdXH_67?usp=drive_link">Download Link</a>
+<br />
 # Manual Aleedin Studio untuk VS Code
 
 [English manual](VSIX_MANUAL_EN.md)
